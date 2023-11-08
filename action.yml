@@ -1,0 +1,45 @@
+# action.yml
+name: 'Create GPU'
+description: 'Deploy GPU and provide connection details'
+inputs:
+  access-key:
+    description: 'access-key'
+    required: true
+    default: 'access-key'
+  secret-key:
+    description: 'secret-key'
+    required: true
+    default: 'secret-key'
+  ssh-key:
+    description: 'ssh-key'
+    required: true
+    default: 'ssh-key'
+  name:
+    description: 'name'
+    required: false
+    default: 'RTX_4090'
+  region:
+    description: 'region'
+    required: false
+    default: 'RTX_4090'
+  count:
+    description: 'gpu count'
+    required: false
+    default: '1'
+outputs:
+  uuid:
+    description: 'uuid'
+  host:
+    description: 'host'
+  port:
+    description: 'port'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.access-key }}
+    - ${{ inputs.secret-key }}
+    - ${{ inputs.ssh-key }}
+    - ${{ inputs.name }}
+    - ${{ inputs.region }}
+    - ${{ inputs.count }}
