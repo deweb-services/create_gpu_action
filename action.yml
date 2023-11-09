@@ -22,6 +22,10 @@ inputs:
     description: 'region'
     required: false
     default: 'RTX_4090'
+  image:
+    description: 'image'
+    required: false
+    default: 'Europe'
   count:
     description: 'gpu count'
     required: false
@@ -42,4 +46,5 @@ runs:
     - ${{ inputs.ssh-key }}
     - ${{ inputs.name }}
     - ${{ inputs.region }}
+    - ${{ inputs.image }}
     - ${{ inputs.count }}
