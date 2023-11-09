@@ -1,4 +1,4 @@
-FROM deployment-script:latest as builder
+FROM ghcr.io/deweb-services/deployment-script:latest as builder
 
 COPY entrypoint.sh /entrypoint.sh
 
