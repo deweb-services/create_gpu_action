@@ -21,11 +21,11 @@ inputs:
   region:
     description: 'region'
     required: false
-    default: 'RTX_4090'
+    default: 'Europe'
   image:
     description: 'image'
     required: false
-    default: 'Europe'
+    default: 'ubuntu:latest'
   count:
     description: 'gpu count'
     required: false
