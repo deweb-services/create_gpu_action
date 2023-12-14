@@ -49,7 +49,7 @@ Port of your deployment.
     steps:
       - name: Create gpu action step
         id: create-gpu
-        uses: deweb-services/create_gpu_action@v0.11
+        uses: deweb-services/create_gpu_action@v0.12
         with:
           access-key: 'a12352244527cmzpxg74tq'
           secret-key: 'jyezkpdq2hljjjkfqoiyrjjjgckgospjrm74fkmdik'

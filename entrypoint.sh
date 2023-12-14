@@ -4,5 +4,5 @@
 
 export RESULT=$(cat result)
 
-echo $RESULT >> $GITHUB_OUTPUT
+echo "$RESULT" >> $GITHUB_OUTPUT
 
