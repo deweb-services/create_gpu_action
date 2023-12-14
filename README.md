@@ -30,7 +30,6 @@ Region where you want to deploy. Default `"Europe"`.
 
 Count of gpus you want to deploy. Default `"1"`.
 
-
 ## Outputs
 
 ## `uuid`
@@ -45,16 +44,15 @@ IP address of your deployment.
 
 Port of your deployment.
 
-
 ## Example usage
 
     steps:
       - name: Create gpu action step
         id: create-gpu
-        uses: deweb-services/create_gpu_action@v1
+        uses: deweb-services/create_gpu_action@v0.11
         with:
           access-key: 'a12352244527cmzpxg74tq'
-          secret-key: 'jyezkpdq2hlsajkfqoiyrubngckgospjrm74fkmdik'
+          secret-key: 'jyezkpdq2hljjjkfqoiyrjjjgckgospjrm74fkmdik'
           ssh-key: 'ssh-ed25519 AAAAC3afslHAsdkjHJKDFPY+6VWQaM ASDEW@gmail.com'
           name: 'RTX_4090'
           region: 'Europe'
