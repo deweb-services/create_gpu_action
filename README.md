@@ -4,11 +4,11 @@
 
 ## `access-key`
 
-**Required** Your access key for dws platform.
+**Required** Your access key for nodeshift platform.
 
 ## `secret-key`
 
-**Required** Your secret key for dws platform.
+**Required** Your secret key for nodeshift platform.
 
 ## `ssh-key`
 
